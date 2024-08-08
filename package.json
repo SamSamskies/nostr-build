@@ -1,0 +1,34 @@
+{
+  "name": "nostr-build",
+  "version": "0.0.0",
+  "description": "Utilities for working with nostr.build media",
+  "main": "dist/nostr-build.umd.js",
+  "module": "dist/nostr-build.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "vite build",
+    "release": "np"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/SamSamskies/nostr-build.git"
+  },
+  "keywords": [
+    "nostr",
+    "nostr.build",
+    "utils"
+  ],
+  "author": "Sam Samskies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SamSamskies/nostr-build/issues"
+  },
+  "homepage": "https://github.com/SamSamskies/nostr-build#readme",
+  "dependencies": {
+    "nostr-tools": "2.7.2"
+  },
+  "devDependencies": {
+    "np": "^10.0.7",
+    "vite": "^5.4.0"
+  }
+}
