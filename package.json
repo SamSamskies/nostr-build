@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "build": "vite build",
-    "release": "np"
+    "release": "np",
+    "test": "echo 'No tests to run'"
   },
   "repository": {
     "type": "git",
