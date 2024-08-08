@@ -5,6 +5,10 @@
   "main": "dist/nostr-build.umd.js",
   "module": "dist/nostr-build.mjs",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "vite build",
     "release": "np"
