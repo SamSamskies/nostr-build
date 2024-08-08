@@ -6,8 +6,7 @@
   "module": "dist/nostr-build.mjs",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "README.md"
+    "dist"
   ],
   "scripts": {
     "build": "vite build",
