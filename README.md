@@ -16,7 +16,7 @@ yarn add nostr-build
 ## Usage
 
 - [uploadFile](#uploadFile) - Allows you to upload a file to nostr.build which complies with the [NIP-96](https://github.com/nostr-protocol/nips/blob/master/96.md) standard
-- [deleteFile](#deleteFile) - Allows you to delete a file to nostr.build which complies complies with the [NIP-96](https://github.com/nostr-protocol/nips/blob/master/96.md) standard
+- [deleteFile](#deleteFile) - Allows you to delete a file from nostr.build which complies complies with the [NIP-96](https://github.com/nostr-protocol/nips/blob/master/96.md) standard
 
 ### uploadFile
 
@@ -133,7 +133,7 @@ export default function App() {
 
 ### deleteFile
 
-Allows you to delete a file to nostr.build which complies complies with the [NIP-96](https://github.com/nostr-protocol/nips/blob/master/96.md) standard
+Allows you to delete a file from nostr.build which complies complies with the [NIP-96](https://github.com/nostr-protocol/nips/blob/master/96.md) standard
 
 ```
 fileHashOrFileName: string; // The file hash for free accounts or file name for premium accounts.
@@ -145,6 +145,8 @@ sign: (event: EventTemplate) => Promise<Event> // nostr signing function
 Example:
 
 ```js
+import { deleteFile } from "nostr-build";
+
 const fileName = 'exampleFileNameOnNostrBuild.jpg';
 const sign = (event) => window.nostr.signEvent(event);
 
