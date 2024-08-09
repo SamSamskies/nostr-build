@@ -1,4 +1,5 @@
 # nostr-build
+[![NPM](https://img.shields.io/npm/v/nostr-build.svg)](https://www.npmjs.com/package/nostr-build)
 
 Utilities for working with [nostr.build](https://nostr.build/) media.
 
