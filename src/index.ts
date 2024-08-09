@@ -1,6 +1,7 @@
 import {
     readServerConfig,
     uploadFile as nostrToolsUploadFile,
+    deleteFile as nostrToolsDeleteFile,
 } from "nostr-tools/nip96";
 import { getToken } from "nostr-tools/nip98";
 
@@ -132,4 +133,23 @@ export const uploadFile = async ({ file, options, sign }: UploadParams): Promise
     const nip98AuthorizationHeader = await getToken(apiUrl, "POST", sign, true);
 
     return nostrToolsUploadFile(file, apiUrl, nip98AuthorizationHeader, options);
+};
+
+/**
+ * Pass in file hash for free accounts or file name for premium accounts.
+ */
+export const deleteFile = async (fileHashOrFileName: string, sign: Sign) => {
+  const apiUrl = await getApiUrl();
+  const nip98AuthorizationHeader = await getToken(
+      `${apiUrl}/${fileHashOrFileName}`,
+      "DELETE",
+      sign,
+      true,
+  );
+
+  return nostrToolsDeleteFile(
+      fileHashOrFileName,
+      apiUrl,
+      nip98AuthorizationHeader,
+  );
 };
