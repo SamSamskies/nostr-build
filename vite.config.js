@@ -4,7 +4,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: 'NostrUpload',
+      name: 'NostrBuild',
       formats: ['es', 'umd']
     },
     rollupOptions: {
