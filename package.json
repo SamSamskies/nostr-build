@@ -1,6 +1,6 @@
 {
   "name": "nostr-build",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Utilities for working with nostr.build media",
   "main": "dist/nostr-build.umd.js",
   "module": "dist/nostr-build.js",
