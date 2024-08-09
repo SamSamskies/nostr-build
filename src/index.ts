@@ -16,7 +16,7 @@ const getApiUrl = async () => {
 
 interface UploadParams {
     file: File;
-    options: OptionalFormDataFields;
+    options?: OptionalFormDataFields;
     sign: Sign;
 }
 
